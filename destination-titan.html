@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="destination.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Destination Europa</title>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">
+      <img src="/assets/shared/logo.svg" alt="">
+    </div>
+    <div id="sideNav" class="menu">
+      <a href="/index.html">00 Home</a>
+      <a href="/destination-moon.html" class="active">01 Destination</a>
+      <a href="/crew-commander.html">02 Crew</a>
+      <a href="/technology-vehicle.html">03 Technology</a>
+    </div>
+  </div>
+  <div class="heading">
+    <span>01</span> &nbsp; PICK YOUR DESTINATION
+  </div>
+
+  <div class="hero">
+    <div class="title-img">
+      <img src="/assets/destination/image-titan.png" alt="">
+    </div>
+    <div class="content">
+      <div class="links">
+        <a href="/destination-moon.html">MOON</a>
+        <a href="/destination-mars.html">MARS</a>
+        <a href="/destination-europa.html">EUROPA</a>
+        <a href="/destination-titan.html" class="active">TITAN</a>  
+      </div>
+      <div id="menuBtn">
+        <img src="/assets/menu.png" alt="" id="menu">
+      </div>
+      <div class="large">TITANS</div>
+      <div class="text">
+        The only moon known to have a dense atmosphere other than Earth, Titan 
+        is a home away from home (just a few hundred degrees colder!). As a 
+        bonus, you get striking views of the Rings of Saturn.
+      </div>
+      <hr>
+      <div class="data">
+        <div class="distance">
+          Avg. distance <br>
+          <span>1.6 bil. km</span> 
+        </div>
+        <div class="distance">
+          Est. travel time <br>
+          <span>7 years</span> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var menuBtn = document.getElementById('menuBtn')
+    var menuBtn = document.getElementsByClassName('menu')
+    var menuBtn = document.getElementById('menu')
+
+    sideNav.style.right = "-250px"
+
+    menuBtn.onclick = function(){
+        if (sideNav.style.right == '-250px'){
+            sideNav.style.right = '0';
+            menu.src = "/assets/close.png";
+        }
+        else {
+            sideNav.style.right = "-250px";
+            menu.src = "/assets/menu.png";
+        }
+    }
+    var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000,
+    speedAsDuration: true
+    });
+  </script>
+</body>

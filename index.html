@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Gabbie | Space tourism website</title>
+</head>
+<body>
+    <div class="header">
+      <div class="logo">
+        <img src="/assets/shared/logo.svg" alt="">
+      </div>
+      <div id="sideNav" class="menu">
+        <a href="#" class="active">00 Home</a>
+        <a href="/destination-moon.html">01 Destination</a>
+        <a href="/crew-commander.html">02 Crew</a>
+        <a href="/technology-vehicle.html">03 Technology</a>
+      </div>
+      <div id="menuBtn">
+        <img src="/assets/menu.png" alt="" id="menu">
+      </div>
+    </div>
+    <div class="hero">
+      <div class="left">
+        <h2>So, you want to travel to</h2>
+        <h1>SPACE</h1>
+        <p>Let’s face it; if you want to go to space, you might as well genuinely go to 
+          outer space and not hover kind of on the edge of it. Well sit back, and relax 
+          because we’ll give you a truly out of this world experience!
+        </p>
+      </div>
+      <div class="right">
+        <button>EXPLORE</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    var menuBtn = document.getElementById('menuBtn')
+    var menuBtn = document.getElementsByClassName('menu')
+    var menuBtn = document.getElementById('menu')
+
+    sideNav.style.right = "-250px"
+
+    menuBtn.onclick = function(){
+        if (sideNav.style.right == '-250px'){
+            sideNav.style.right = '0';
+            menu.src = "/assets/close.png";
+        }
+        else {
+            sideNav.style.right = "-250px";
+            menu.src = "/assets/menu.png";
+        }
+    }
+    var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000,
+    speedAsDuration: true
+    });
+  </script>
+</body>
+</html>

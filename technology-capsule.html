@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="/technology.css">
+  <title>Technology capsule</title>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="/assets/shared/logo.svg" alt="">
+    </div>
+    <div id="sideNav" class="menu">
+      <a href="/index.html">00 Home</a>
+      <a href="/destination-moon.html">01 Destination</a>
+      <a href="/crew-commander.html">02 Crew</a>
+      <a href="/technology-vehicle.html" class="active">03 Technology</a>
+    </div>
+    <div id="menuBtn">
+      <img src="/assets/menu.png" alt="" id="menu">
+    </div>
+  </div>
+  <div class="heading">
+    <span>03</span> &nbsp; SPACE LAUNCH 101
+  </div>
+  <div class="hero">
+    <div class="numbers">
+      <a href="/technology-vehicle.html">1</a>
+      <a href="/technology-spaceport.html">2</a>
+      <a href="/technology-capsule.html" class="active">3</a>
+    </div>
+    <div class="content">
+      <h4>THE TERMINOLOGY...</h4>
+      <h2>SPACE CAPSULE</h2>
+      <p>
+        A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+        capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
+        you'll spend your time during the flight. It includes a space gym, cinema, 
+        and plenty of other activities to keep you entertained.
+      </p>
+    </div>
+    <div class="img">
+      <img src="/assets/technology/image-space-capsule-portrait.jpg" alt="">
+    </div>
+  </div>
+  <script>
+    var menuBtn = document.getElementById('menuBtn')
+    var menuBtn = document.getElementsByClassName('menu')
+    var menuBtn = document.getElementById('menu')
+
+    sideNav.style.right = "-250px"
+
+    menuBtn.onclick = function(){
+        if (sideNav.style.right == '-250px'){
+            sideNav.style.right = '0';
+            menu.src = "/assets/close.png";
+        }
+        else {
+            sideNav.style.right = "-250px";
+            menu.src = "/assets/menu.png";
+        }
+    }
+    var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000,
+    speedAsDuration: true
+    });
+  </script>
+</body>
+</html>

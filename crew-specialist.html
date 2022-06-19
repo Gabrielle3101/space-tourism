@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="/crew.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Crew Specialist</title>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="/assets/shared/logo.svg" alt="">
+    </div>
+    <div id="sideNav" class="menu">
+      <a href="/index.html">00 Home</a>
+      <a href="/destination-moon.html">01 Destination</a>
+      <a href="/crew-commander.html" class="active">02 Crew</a>
+      <a href="/technology-vehicle.html">03 Technology</a>
+    </div>
+    <div id="menuBtn">
+      <img src="/assets/menu.png" alt="" id="menu">
+    </div>
+  </div>
+  <div class="heading">
+    <span>02</span> &nbsp; MEET YOUR CREW
+  </div>
+  <div class="hero">
+    <div class="content">
+      <h3>MISSION SPECIALIST</h3>
+      <h2>MARK SHUTTLEWORTH</h2>
+      <p>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+        the Linux-based Ubuntu operating system. Shuttleworth became the first South 
+        African to travel to space as a space tourist.
+      </p>
+      <div class="links">
+        <a href="/crew-commander.html">&nbsp;</a>
+        <a href="/crew-specialist.html" class="active">&nbsp;</a>
+        <a href="/crew-pilot.html">&nbsp;</a>
+        <a href="/crew-engineer.html">&nbsp;</a>
+      </div>
+    </div>
+    <div class="profile-img">
+      <img src="/assets/crew/image-mark-shuttleworth.png" alt="">
+    </div>
+  </div>
+  <script>
+    var menuBtn = document.getElementById('menuBtn')
+    var menuBtn = document.getElementsByClassName('menu')
+    var menuBtn = document.getElementById('menu')
+
+    sideNav.style.right = "-250px"
+
+    menuBtn.onclick = function(){
+        if (sideNav.style.right == '-250px'){
+            sideNav.style.right = '0';
+            menu.src = "/assets/close.png";
+        }
+        else {
+            sideNav.style.right = "-250px";
+            menu.src = "/assets/menu.png";
+        }
+    }
+    var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000,
+    speedAsDuration: true
+    });
+  </script>
+</body>
+</html>
