@@ -40,7 +40,7 @@ body {
     font-size: medium;
     padding: 10px;
     color: #d0d6f9;
-    font-style: var(--barlow);
+    font-family: var(--barlow);
 }
 
 .menu .active{
@@ -77,7 +77,7 @@ body {
     display: flex;
     margin: 50px;
     font-size: 30px;
-    font-style: var(--barlow);
+    font-family: var(--barlow);
 }
 
 .heading span {
@@ -103,12 +103,12 @@ body {
 h3 {
     color: #d0d6f9;
     font-size: 32px;
-    font-style: var(--belle);
+    font-family: var(--belle);
 }
 
 h2 {
     font-size: 56px;
-    font-style: var(--belle);
+    font-family: var(--belle);
 }
 
 p {
@@ -118,7 +118,7 @@ p {
     word-spacing: 2px;
     color: #d0d6f9;
     width: 70%;
-    font-style: var(--barlow);
+    font-family: var(--barlow);
 }
 
 .links {

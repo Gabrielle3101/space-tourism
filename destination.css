@@ -40,7 +40,7 @@ body {
     font-size: medium;
     padding: 10px;
     color: #d0d6f9;
-    font-style: var(--barlow);
+    font-family: var(--barlow);
 }
 
 #menuBtn {
@@ -65,7 +65,7 @@ body {
 .heading {
     display: flex;
     margin: 50px;
-    font-style: var(--barlow);
+    font-family: var(--barlow);
     font-size: 30px;
 }
 
@@ -98,13 +98,13 @@ body {
     font-size: medium;
     padding: 10px;
     color: #d0d6f9;
-    font-style: var(--barlow);
+    font-family: var(--barlow);
 }
 
 .large {
     padding: 10px;
     font-size: 100px;
-    font-style: var(--belle);
+    font-family: var(--belle);
 }
 
 .text {
@@ -113,7 +113,7 @@ body {
     line-height: 25px;
     word-spacing: 2px;
     color: #d0d6f9;
-    font-style: var(--barlow);
+    font-family: var(--barlow);
 }
 
 hr{
@@ -136,12 +136,12 @@ hr{
 .distance {
     margin-right: 50px;
     color: #d0d6f9;
-    font-style: var(--barlow);
+    font-family: var(--barlow);
 }
 
 .distance span {
     font-size: 28px;
-    font-style: var(--belle);
+    font-family: var(--belle);
 }
 
 @media screen and (max-width: 950px) {
